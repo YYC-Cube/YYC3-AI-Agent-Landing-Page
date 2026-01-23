@@ -89,10 +89,10 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YYC3/yyc3-ai-landing-page.git
+git clone https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page.git
 
 # 进入项目目录
-cd yyc3-ai-landing-page
+cd YYC3-AI-Agent-Landing-Page
 
 # 查看分支
 git branch -a

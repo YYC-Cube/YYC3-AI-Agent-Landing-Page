@@ -7,9 +7,14 @@ import { LocaleProvider } from "@/contexts/locale-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "YYC³ AI Agent Landing Page",
+  description: "YYC³ AI Agent Landing Page - 专业的AI代理服务展示平台",
+  generator: "YYC³",
+  icons: {
+    icon: "/yyc3-pwa-icon.png",
+    shortcut: "/yyc3-pwa-icon.png",
+    apple: "/yyc3-pwa-icon.png",
+  },
 }
 
 export default function RootLayout({

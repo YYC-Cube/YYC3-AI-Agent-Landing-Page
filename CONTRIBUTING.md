@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢您对 YYC³ AI Landing Page 项目的关注！我们欢迎所有形式的贡献。
+感谢您对 YYC³ AI Agent Landing Page 项目的关注！我们欢迎所有形式的贡献。
 
 ## 📋 目录
 
@@ -30,7 +30,7 @@
 
 如果您发现了 Bug，请：
 
-1. 检查 [Issues](https://github.com/YYC-Cube/yyc3-ai-landing-page/issues) 确认该 Bug 是否已被报告
+1. 检查 [Issues](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/issues) 确认该 Bug 是否已被报告
 2. 如果未被报告，创建一个新的 Issue
 3. 在 Issue 中提供：
    - 清晰的标题和描述
@@ -44,7 +44,7 @@
 
 如果您有新功能的想法：
 
-1. 检查 [Issues](https://github.com/YYC-Cube/yyc3-ai-landing-page/issues) 确认该功能是否已被请求
+1. 检查 [Issues](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/issues) 确认该功能是否已被请求
 2. 如果未被请求，创建一个新的 Issue
 3. 在 Issue 中提供：
    - 功能描述
@@ -71,8 +71,8 @@
 
 ```bash
 # Fork 并克隆仓库
-git clone https://github.com/your-username/yyc3-ai-landing-page.git
-cd yyc3-ai-landing-page
+git clone https://github.com/your-username/YYC3-AI-Agent-Landing-Page.git
+cd YYC3-AI-Agent-Landing-Page
 
 # 安装依赖
 pnpm install
@@ -234,7 +234,7 @@ Fixes #456
 ## 📧 联系我们
 
 - **技术支持**：<admin@0379.email>
-- **GitHub Issues**：[https://github.com/YYC-Cube/yyc3-ai-landing-page/issues](https://github.com/YYC-Cube/yyc3-ai-landing-page/issues)
+- **GitHub Issues**：[https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/issues](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/issues)
 
 ---
 

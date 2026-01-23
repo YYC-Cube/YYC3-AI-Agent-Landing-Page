@@ -1,6 +1,6 @@
-# 🔖 YYC³ AI Landing Page
+# 🔖 YYC³ AI Agent Landing Page
 
-![YYC³ AI Landing Page](public/yyc3-article-cover-03.png)
+![YYC³ AI Agent Landing Page](public/yyc3-article-cover-03.png)
 
 > ***YanYuCloudCube***
 
@@ -24,7 +24,7 @@
 
 ## 📋 项目概述
 
-**YYC³ AI Landing Page** 是一个现代化的 AI 代理服务落地页，采用 Next.js 16 构建，集成了国际化系统、3D 场景交互、动画效果和响应式设计。本项目旨在为 AI 代理服务提供专业、美观、高性能的展示平台，支持多语言切换，提供流畅的用户体验。
+**YYC³(YanYuCloudCube) AI Agent Landing Page** 是一个现代化的 AI 代理服务落地页，采用 Next.js 16 构建，集成了国际化系统、3D 场景交互、动画效果和响应式设计。本项目旨在为 AI 代理服务提供专业、美观、高性能的展示平台，支持多语言切换，提供流畅的用户体验。
 
 ### 核心特性
 
@@ -186,7 +186,7 @@ function Component() {
 ## 📁 项目结构
 
 ```
-yyc3-ai-landing-page/
+yyc3-ai-agent-landing-page/
 ├── app/                      # Next.js App Router
 │   ├── layout.tsx            # 根布局
 │   ├── page.tsx              # 首页
@@ -371,10 +371,10 @@ pnpm test:e2e
 
 ```bash
 # 构建镜像
-docker build -t yyc3-ai-landing-page .
+docker build -t yyc3-ai-agent-landing-page .
 
 # 运行容器
-docker run -p 3000:3000 yyc3-ai-landing-page
+docker run -p 3000:3000 yyc3-ai-agent-landing-page
 ```
 
 ---
@@ -445,14 +445,14 @@ docker run -p 3000:3000 yyc3-ai-landing-page
 ## 📞 联系我们
 
 - **技术支持**：<admin@0379.email>
-- **问题反馈**：[GitHub Issues](https://github.com/YYC-Cube/yyc3-ai-landing-page/issues)
+- **问题反馈**：[GitHub Issues](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/issues)
 - **文档更新**：<admin@0379.email>
 
 ---
 
 ## 🔗 相关链接
 
-- [YYC³ 官网](https://yyc3.com)
+- [YYC³ AI Agent 官网](https://yyc3.com/ai-agent)
 - [Next.js 文档](https://nextjs.org/docs)
 - [React 文档](https://react.dev)
 - [Tailwind CSS 文档](https://tailwindcss.com/docs)

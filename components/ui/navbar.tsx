@@ -52,12 +52,11 @@ export function Navbar() {
 
   const logoElement = (
     <div className="relative w-6 h-6 flex items-center justify-center">
-      <div className="absolute inset-0 border border-gray-300 rounded-sm opacity-60"></div>
-      <div className="absolute w-2 h-2 bg-blue-400 rounded-full top-1 left-1"></div>
-      <div className="absolute w-1 h-1 bg-gray-300 rounded-full top-1 right-1"></div>
-      <div className="absolute w-1 h-1 bg-gray-300 rounded-full bottom-1 left-1"></div>
-      <div className="absolute w-2 h-0.5 bg-gray-300 bottom-1.5 right-1"></div>
-      <span className="absolute text-xs font-bold text-white">AI</span>
+      <img
+        src="/yyc3-logo-black-01.png"
+        alt="YYC³ Logo"
+        className="w-full h-full object-contain"
+      />
     </div>
   )
 
