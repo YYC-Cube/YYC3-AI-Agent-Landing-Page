@@ -29,7 +29,7 @@
 
 #### 1.1 项目背景
 
-YYC3-AI-Landing-Page项目是一个基于「五高五标五化」理念的现代化智能城市服务平台，集成了本地大模型AI助手"小语"，为用户提供全方位的智慧生活服务。平台以拟人化交互为核心，结合百度地图、本地大模型等技术，打造24/7贴心智能服务体验，让智能贴近生活，让科技更有温度。
+YYC3-AI-Landing-Page项目是一个现代化的 AI 代理服务落地页，采用 Next.js 16 构建，集成了国际化系统、3D 场景交互、动画效果和响应式设计。本项目旨在为 AI 代理服务提供专业、美观、高性能的展示平台，支持多语言切换，提供流畅的用户体验。
 
 随着项目文档的不断增加，建立清晰的文档映射目录变得尤为重要。一个良好的文档映射目录可以帮助团队成员快速找到所需文档，提高工作效率，确保文档的有效利用。
 
@@ -73,251 +73,236 @@ YYC3-AI-Landing-Page项目是一个基于「五高五标五化」理念的现代
 
 **文档根目录**
 - `/docs`：主文档目录
-  - `/YYC3-AI-Landing-Page-需求规划`：需求规划文档
-  - `/YYC3-AI-Landing-Page-项目规划`：项目规划文档
-  - `/YYC3-AI-Landing-Page-架构设计`：架构设计文档
-  - `/YYC3-AI-Landing-Page-详细设计`：详细设计文档
-  - `/YYC3-AI-Landing-Page-API文档`：API文档
-  - `/YYC3-AI-Landing-Page-类型定义`：类型定义文档
-  - `/YYC3-AI-Landing-Page-开发阶段`：开发阶段文档
-  - `/YYC3-AI-Landing-Page-测试验证`：测试验证文档
-  - `/YYC3-AI-Landing-Page-部署发布`：部署发布文档
-  - `/YYC3-AI-Landing-Page-运维阶段`：运维阶段文档
-  - `/YYC3-AI-Landing-Page-产品文档`：产品文档
-  - `/YYC3-AI-Landing-Page-综合支撑`：综合支撑文档
-  - `YYC3-AI-Landing-Page-文档同步机制.md`：文档同步机制说明
-  - `YYC3-AI-Landing-Page-交互式API文档实现方案.md`：交互式API文档实现方案
-  - `YYC3-AI-Landing-Page-文档映射目录.md`：文档映射目录
+  - `/YYC3-AI-LANDING-需求规划`：需求规划文档（001-007）
+  - `/YYC3-AI-LANDING-项目规划`：项目规划文档（011-016）
+  - `/YYC3-AI-LANDING-架构设计`：架构设计文档（021-031）
+  - `/YYC3-AI-LANDING-详细设计`：详细设计文档（036-054）
+  - `/YYC3-AI-LANDING-API文档`：API文档（056-073）
+  - `/YYC3-AI-LANDING-类型定义`：类型定义文档（074-080）
+  - `/YYC3-AI-LANDING-测试文档`：测试文档（081-089）
+  - `/YYC3-AI-LANDING-用户手册`：用户手册（100-105）
+  - `/YYC3-AI-LANDING-部署运维`：部署运维文档（090-099）
+  - `/YYC3-AI-LANDING-脚本工具`：脚本工具
+  - 根级别文档：
+    - `YYC3-AI-LANDING-企业级功能矩阵.md`：企业级功能矩阵
+    - `YYC3-AI-LANDING-功能规划路线图.md`：功能规划路线图
+    - `YYC3-AI-LANDING-技术拓展架构.md`：技术拓展架构
+    - `YYC3-AI-LANDING-文档同步机制.md`：文档同步机制
+    - `YYC3-AI-LANDING-文档映射目录.md`：文档映射目录
+    - `YYC3-AI-LANDING-文档闭环.md`：文档闭环
+    - `YYC3-AI-LANDING-标准化审核清单.md`：标准化审核清单
 
 #### 3.2 分类说明
 
-**1. 需求规划**
-- 项目章程
-- 可行性分析报告
-- 项目需求说明书
-- 利益相关者分析
-- 需求变更管理计划
+**1. 需求规划（001-007）**
+- 001-YYC3-AI-LANDING-需求规划-项目章程.md
+- 002-YYC3-AI-LANDING-需求规划-可行性分析报告.md
+- 003-YYC3-AI-LANDING-需求规划-项目需求说明书.md
+- 004-YYC3-AI-LANDING-需求规划-利益相关者分析.md
+- 005-YYC3-AI-LANDING-需求规划-AI功能需求设计.md
+- 006-YYC3-AI-LANDING-需求规划-需求变更管理计划.md
+- 007-YYC3-AI-LANDING-需求规划-预留文档位01.md
 
-**2. 项目规划**
-- 项目管理计划
-- 项目进度计划
-- 资源分配计划
-- 风险管理计划
-- 沟通管理计划
+**2. 项目规划（011-016）**
+- 011-YYC3-AI-LANDING-项目规划-项目管理计划.md
+- 012-YYC3-AI-LANDING-项目规划-项目进度计划.md
+- 013-YYC3-AI-LANDING-项目规划-资源分配计划.md
+- 014-YYC3-AI-LANDING-项目规划-风险管理计划.md
+- 015-YYC3-AI-LANDING-项目规划-沟通管理计划.md
+- 016-YYC3-AI-LANDING-项目规划-预留文档位01.md
 
-**3. 架构设计**
-- 系统架构设计文档
-- 数据架构设计文档
-- 技术选型报告
-- 数据库设计文档
-- 安全架构设计文档
-- 微服务拆分设计文档
-- 缓存架构设计文档
-- 分布式链路设计文档
-- 高并发限流设计文档
-- 多环境架构适配文档
+**3. 架构设计（021-031）**
+- 021-YYC3-AI-LANDING-架构设计-系统架构设计文档.md
+- 022-YYC3-AI-LANDING-架构设计-数据架构设计文档.md
+- 023-YYC3-AI-LANDING-架构设计-技术选型报告.md
+- 024-YYC3-AI-LANDING-架构设计-组件架构设计文档.md
+- 025-YYC3-AI-LANDING-架构设计-安全架构设计文档.md
+- 026-YYC3-AI-LANDING-架构设计-国际化架构设计文档.md
+- 027-YYC3-AI-LANDING-架构设计-动画交互架构设计文档.md
+- 028-YYC3-AI-LANDING-架构设计-性能优化架构文档.md
+- 029-YYC3-AI-LANDING-架构设计-响应式架构设计文档.md
+- 030-YYC3-AI-LANDING-架构设计-部署架构设计文档.md
+- 031-YYC3-AI-LANDING-架构设计-预留文档位01.md
 
-**4. 详细设计**
-- 模块详细设计文档
-- UI-UX设计规范
-- 交互流程图
-- 界面原型文档
-- 技术实现方案
-- 数据模型设计文档
-- 前端工程化代码分层设计
-- 后端微服务模块代码设计
-- 跨端适配代码规范文档
-- 前后端联调接口适配文档
-- 通用组件封装设计文档
-- 业务逻辑核心代码实现
-- 数据校验规则代码设计
-- 异常处理代码规范
-- 权限控制代码植入文档
-- 批量数据处理代码设计
-- 第三方SDK集成代码文档
-- 性能优化代码方案
+**4. 详细设计（036-054）**
+- 036-YYC3-AI-LANDING-详细设计-模块详细设计文档.md
+- 037-YYC3-AI-LANDING-详细设计-UI-UX设计规范.md
+- 038-YYC3-AI-LANDING-详细设计-交互流程图.md
+- 039-YYC3-AI-LANDING-详细设计-界面原型文档.md
+- 040-YYC3-AI-LANDING-详细设计-技术实现方案.md
+- 041-YYC3-AI-LANDING-详细设计-组件设计文档.md
+- 042-YYC3-AI-LANDING-详细设计-动画效果设计文档.md
+- 043-YYC3-AI-LANDING-详细设计-国际化实现文档.md
+- 044-YYC3-AI-LANDING-详细设计-响应式适配文档.md
+- 045-YYC3-AI-LANDING-详细设计-性能优化方案.md
+- 046-YYC3-AI-LANDING-详细设计-通用组件封装文档.md
+- 047-YYC3-AI-LANDING-详细设计-业务逻辑实现.md
+- 048-YYC3-AI-LANDING-详细设计-数据校验规则.md
+- 049-YYC3-AI-LANDING-详细设计-异常处理规范.md
+- 050-YYC3-AI-LANDING-详细设计-权限控制实现.md
+- 051-YYC3-AI-LANDING-详细设计-第三方集成文档.md
+- 052-YYC3-AI-LANDING-详细设计-SEO优化方案.md
+- 053-YYC3-AI-LANDING-详细设计-PWA实现方案.md
+- 054-YYC3-AI-LANDING-详细设计-预留文档位01.md
 
-**5. API文档**
-- 通用规范-RESTful接口设计标准
-- 通用规范-接口错误码体系
-- 通用规范-接口签名鉴权手册
-- 业务域-用户端接口手册
-- 业务域-管理员端接口手册
-- 业务域-智能助手接口手册
-- 业务域-地图服务接口手册
-- 技术类型-微服务内部调用接口
-- 技术类型-网关聚合接口手册
-- 技术类型-WebSocket实时通信接口
-- 技术类型-文件上传下载接口手册
-- 第三方-支付服务集成接口
-- 第三方-短信邮件服务接口
-- 版本管理-接口迭代变更记录
-- 测试用例-接口自动化测试脚本
+**5. API文档（056-073）**
+- 056-YYC3-AI-LANDING-API文档-通用规范-RESTful接口设计标准.md
+- 057-YYC3-AI-LANDING-API文档-通用规范-接口错误码体系.md
+- 058-YYC3-AI-LANDING-API文档-通用规范-接口签名鉴权手册.md
+- 059-YYC3-AI-LANDING-API文档-业务域-首页接口手册.md
+- 060-YYC3-AI-LANDING-API文档-业务域-服务接口手册.md
+- 061-YYC3-AI-LANDING-API文档-业务域-定价接口手册.md
+- 062-YYC3-AI-LANDING-API文档-业务域-联系接口手册.md
+- 063-YYC3-AI-LANDING-API文档-业务域-测试接口手册.md
+- 064-YYC3-AI-LANDING-API文档-业务域-流程接口手册.md
+- 065-YYC3-AI-LANDING-API文档-技术类型-国际化接口.md
+- 066-YYC3-AI-LANDING-API文档-技术类型-动画接口.md
+- 067-YYC3-AI-LANDING-API文档-技术类型-3D场景接口.md
+- 068-YYC3-AI-LANDING-API文档-技术类型-文件服务接口.md
+- 069-YYC3-AI-LANDING-API文档-第三方-Spline集成接口.md
+- 070-YYC3-AI-LANDING-API文档-第三方-分析服务接口.md
+- 071-YYC3-AI-LANDING-API文档-版本管理-接口迭代变更记录.md
+- 072-YYC3-AI-LANDING-API文档-测试用例-接口自动化测试脚本.md
+- 073-YYC3-AI-LANDING-API文档-预留文档位01.md
 
-**6. 类型定义**
-- 数据库-全库表字段字典
-- 数据库-枚举值字典文档
-- 前端-TypeScript全局类型声明
-- 前端-组件Props类型约束
-- 前端-请求响应数据类型
-- 后端-请求参数VO校验规则
-- 后端-返回结果BO结构文档
-- 业务模块-用户权限类型字典
-- 业务模块-智能助手类型约束
-- 微服务-服务间契约类型定义
-- 通用-全局常量枚举文档
-- 通用-数据格式校验规则
-- 跨端-小程序-APP数据类型适配
-- 版本迭代-类型变更记录
+**6. 类型定义（074-080）**
+- 074-YYC3-AI-LANDING-类型定义-前端-TypeScript全局类型声明.md
+- 075-YYC3-AI-LANDING-类型定义-前端-组件Props类型约束.md
+- 076-YYC3-AI-LANDING-类型定义-前端-请求响应数据类型.md
+- 077-YYC3-AI-LANDING-类型定义-业务模块-用户类型字典.md
+- 078-YYC3-AI-LANDING-类型定义-业务模块-服务类型约束.md
+- 079-YYC3-AI-LANDING-类型定义-业务模块-定价类型字典.md
+- 080-YYC3-AI-LANDING-类型定义-预留文档位01.md
 
-**7. 开发阶段**
-- 开发计划与进度表
-- 代码规范
-- 单元测试文档
-- 集成测试文档
-- 开发问题跟踪记录
-- 代码评审报告
-- 前端代码评审细则
-- 后端代码评审细则
-- 自动化构建部署脚本
-- 本地开发环境配置
-- 联调环境测试规范
-- 技术债务清理计划
-- 代码覆盖率报告
+**7. 测试文档（081-089）**
+- 081-YYC3-AI-LANDING-测试文档-单元测试规范.md
+- 082-YYC3-AI-LANDING-测试文档-集成测试规范.md
+- 083-YYC3-AI-LANDING-测试文档-E2E测试规范.md
+- 084-YYC3-AI-LANDING-测试文档-性能测试方案.md
+- 085-YYC3-AI-LANDING-测试文档-安全测试方案.md
+- 086-YYC3-AI-LANDING-测试文档-兼容性测试方案.md
+- 087-YYC3-AI-LANDING-测试文档-测试用例管理.md
+- 088-YYC3-AI-LANDING-测试文档-测试数据管理.md
+- 089-YYC3-AI-LANDING-测试文档-预留文档位01.md
 
-**8. 测试验证**
-- 测试计划
-- 功能测试用例
-- 性能测试报告
-- 安全测试报告
-- 用户验收测试报告
-- 缺陷跟踪报告
-- 兼容性测试报告
-- 压力测试报告
-- 接口自动化测试报告
-- 回归测试用例
-- 安全渗透测试报告
-- 测试环境配置文档
-- 缺陷定级标准
+**8. 用户手册（100-105）**
+- 100-YYC3-AI-LANDING-用户手册-快速开始指南.md
+- 101-YYC3-AI-LANDING-用户手册-功能使用手册.md
+- 102-YYC3-AI-LANDING-用户手册-配置说明文档.md
+- 103-YYC3-AI-LANDING-用户手册-常见问题解答.md
+- 104-YYC3-AI-LANDING-用户手册-故障排除指南.md
+- 105-YYC3-AI-LANDING-用户手册-预留文档位01.md
 
-**9. 部署发布**
-- 部署计划
-- 发布说明
-- 环境配置文档
-- 回滚方案
-- 上线验证报告
-- 灰度发布方案
-- 蓝绿部署文档
-- 容器化部署配置
-- 云服务器配置文档
-- 发布审批流程
+**9. 部署运维（090-099）**
+- 090-YYC3-AI-LANDING-部署运维-部署方案文档.md
+- 091-YYC3-AI-LANDING-部署运维-CI/CD配置文档.md
+- 092-YYC3-AI-LANDING-部署运维-环境配置文档.md
+- 093-YYC3-AI-LANDING-部署运维-监控告警文档.md
+- 094-YYC3-AI-LANDING-部署运维-日志管理文档.md
+- 095-YYC3-AI-LANDING-部署运维-备份恢复文档.md
+- 096-YYC3-AI-LANDING-部署运维-性能优化文档.md
+- 097-YYC3-AI-LANDING-部署运维-安全加固文档.md
+- 098-YYC3-AI-LANDING-部署运维-故障处理文档.md
+- 099-YYC3-AI-LANDING-部署运维-预留文档位01.md
 
-**10. 运维阶段**
-- 运维手册
-- 监控与告警配置
-- 故障处理流程
-- 性能优化报告
-- 系统维护记录
-- 数据备份与恢复方案
-- 日志管理规范
-- 服务器资源监控报告
-- 安全漏洞修复记录
-- 扩容缩容方案
-- 数据库优化手册
-- 缓存失效处理方案
-- 灾备应急预案
+**10. 脚本工具**
+- YYC3-AI-LANDING-DOCS.py：文档生成脚本
+- YYC3-AI-LANDING-DOCS.py：文档生成脚本（脚本工具目录）
 
-**11. 产品文档**
-- 产品白皮书
-- 产品功能说明书
-- 产品路线图
-- 产品更新日志
-- 产品体验优化报告
-- 用户画像分析报告
-
-**12. 综合支撑**
-- 用户手册-普通用户
-- 用户手册-管理员
-- 培训文档-全角色培训课件
-- 问题跟踪-全维度问题台账
-- 版本控制-全版本管理规范
-- 知识管理-最佳实践手册
-- 审核报告-项目结项报告
-- 扩展文档-数据隐私政策
-- 扩展文档-合规性报告
-- 扩展文档-竞品分析报告
-- 扩展文档-智能城市服务数据分析报告
-- 扩展文档-未来功能规划
-- 扩展文档-成本效益分析报告
+**11. 根级别文档**
+- YYC3-AI-LANDING-企业级功能矩阵.md：企业级功能矩阵
+- YYC3-AI-LANDING-功能规划路线图.md：功能规划路线图
+- YYC3-AI-LANDING-技术拓展架构.md：技术拓展架构
+- YYC3-AI-LANDING-文档同步机制.md：文档同步机制
+- YYC3-AI-LANDING-文档映射目录.md：文档映射目录
+- YYC3-AI-LANDING-文档闭环.md：文档闭环
+- YYC3-AI-LANDING-标准化审核清单.md：标准化审核清单
 
 ### 4. 文档映射关系
 
 #### 4.1 代码与文档映射
 
 **前端代码映射**
-- `/app` → `YYC3-AI-Landing-Page-详细设计`
-- `/components` → `YYC3-AI-Landing-Page-详细设计`
-- `/hooks` → `YYC3-AI-Landing-Page-详细设计`
-- `/lib` → `YYC3-AI-Landing-Page-详细设计`
-- `/types` → `YYC3-AI-Landing-Page-类型定义`
+- `/app` → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-架构设计`
+- `/components` → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-类型定义`
+- `/hooks` → `YYC3-AI-LANDING-详细设计`
+- `/lib` → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-类型定义`
+- `/types` → `YYC3-AI-LANDING-类型定义`
+- `/public` → `YYC3-AI-LANDING-详细设计`
 
-**后端代码映射**
-- `/api` → `YYC3-AI-Landing-Page-API文档`
-- `/services` → `YYC3-AI-Landing-Page-详细设计`
-- `/models` → `YYC3-AI-Landing-Page-类型定义`
-- `/middleware` → `YYC3-AI-Landing-Page-架构设计`
+**API代码映射**
+- `/app/api` → `YYC3-AI-LANDING-API文档`
+- API路由 → `YYC3-AI-LANDING-API文档-业务域-*`
 
 **配置文件映射**
-- `/config` → `YYC3-AI-Landing-Page-架构设计`
-- `.env.example` → `YYC3-AI-Landing-Page-部署发布`
+- `next.config.mjs` → `YYC3-AI-LANDING-架构设计`、`YYC3-AI-LANDING-部署运维`
+- `tsconfig.json` → `YYC3-AI-LANDING-架构设计`
+- `tailwind.config.ts` → `YYC3-AI-LANDING-架构设计`
+- `.env.example` → `YYC3-AI-LANDING-用户手册-配置说明文档`
+
+**测试代码映射**
+- `/__tests__` → `YYC3-AI-LANDING-测试文档`
+- `/e2e` → `YYC3-AI-LANDING-测试文档`
 
 #### 4.2 功能与文档映射
 
 **核心功能映射**
-- **智能助手"小语"** → `YYC3-AI-Landing-Page-详细设计`、`YYC3-AI-Landing-Page-API文档`
-- **地图服务** → `YYC3-AI-Landing-Page-详细设计`、`YYC3-AI-Landing-Page-API文档`
-- **用户管理** → `YYC3-AI-Landing-Page-详细设计`、`YYC3-AI-Landing-Page-API文档`
-- **智能时间系统** → `YYC3-AI-Landing-Page-详细设计`
-- **城市之声** → `YYC3-AI-Landing-Page-详细设计`
+- **首页功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`
+- **服务功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`
+- **定价功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`
+- **联系功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`
+- **国际化功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-架构设计`、`YYC3-AI-LANDING-API文档`
+- **3D场景功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`
+- **动画功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`
 
-**管理功能映射**
-- **用户管理** → `YYC3-AI-Landing-Page-详细设计`、`YYC3-AI-Landing-Page-API文档`
-- **权限管理** → `YYC3-AI-Landing-Page-详细设计`、`YYC3-AI-Landing-Page-类型定义`
-- **系统配置** → `YYC3-AI-Landing-Page-架构设计`、`YYC3-AI-Landing-Page-部署发布`
+**技术功能映射**
+- **响应式设计** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-架构设计`
+- **性能优化** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-架构设计`、`YYC3-AI-LANDING-测试文档`
+- **安全功能** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-架构设计`、`YYC3-AI-LANDING-测试文档`
+- **SEO优化** → `YYC3-AI-LANDING-详细设计`
+- **PWA功能** → `YYC3-AI-LANDING-详细设计`
 
 #### 4.3 流程与文档映射
 
 **开发流程映射**
-- **需求分析** → `YYC3-AI-Landing-Page-需求规划`
-- **设计阶段** → `YYC3-AI-Landing-Page-架构设计`、`YYC3-AI-Landing-Page-详细设计`
-- **开发阶段** → `YYC3-AI-Landing-Page-开发阶段`
-- **测试阶段** → `YYC3-AI-Landing-Page-测试验证`
-- **部署阶段** → `YYC3-AI-Landing-Page-部署发布`
-- **运维阶段** → `YYC3-AI-Landing-Page-运维阶段`
+- **需求分析** → `YYC3-AI-LANDING-需求规划`
+- **架构设计** → `YYC3-AI-LANDING-架构设计`
+- **详细设计** → `YYC3-AI-LANDING-详细设计`
+- **API设计** → `YYC3-AI-LANDING-API文档`
+- **类型定义** → `YYC3-AI-LANDING-类型定义`
+- **开发实现** → `YYC3-AI-LANDING-详细设计`
+- **测试验证** → `YYC3-AI-LANDING-测试文档`
+- **部署发布** → `YYC3-AI-LANDING-部署运维`
+- **用户文档** → `YYC3-AI-LANDING-用户手册`
 
-**产品流程映射**
-- **产品规划** → `YYC3-AI-Landing-Page-产品文档`
-- **产品设计** → `YYC3-AI-Landing-Page-详细设计`
-- **产品发布** → `YYC3-AI-Landing-Page-部署发布`
-- **产品运营** → `YYC3-AI-Landing-Page-产品文档`
+**项目管理流程映射**
+- **项目规划** → `YYC3-AI-LANDING-项目规划`
+- **需求管理** → `YYC3-AI-LANDING-需求规划`
+- **进度跟踪** → `YYC3-AI-LANDING-项目规划`
+- **风险管理** → `YYC3-AI-LANDING-项目规划`
+- **沟通管理** → `YYC3-AI-LANDING-项目规划`
 
 ### 5. 导航指南
 
 #### 5.1 快速导航
 
 **按角色导航**
-- **开发人员** → `YYC3-AI-Landing-Page-开发阶段`、`YYC3-AI-Landing-Page-API文档`、`YYC3-AI-Landing-Page-详细设计`
-- **测试人员** → `YYC3-AI-Landing-Page-测试验证`、`YYC3-AI-Landing-Page-API文档`
-- **产品人员** → `YYC3-AI-Landing-Page-产品文档`、`YYC3-AI-Landing-Page-需求规划`
-- **运维人员** → `YYC3-AI-Landing-Page-运维阶段`、`YYC3-AI-Landing-Page-部署发布`
-- **管理人员** → `YYC3-AI-Landing-Page-项目规划`、`YYC3-AI-Landing-Page-综合支撑`
+- **开发人员** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-API文档`、`YYC3-AI-LANDING-类型定义`
+- **前端开发** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-类型定义`
+- **后端开发** → `YYC3-AI-LANDING-API文档`、`YYC3-AI-LANDING-详细设计`
+- **测试人员** → `YYC3-AI-LANDING-测试文档`、`YYC3-AI-LANDING-API文档`
+- **运维人员** → `YYC3-AI-LANDING-部署运维`、`YYC3-AI-LANDING-架构设计`
+- **产品人员** → `YYC3-AI-LANDING-需求规划`、`YYC3-AI-LANDING-项目规划`
+- **项目经理** → `YYC3-AI-LANDING-项目规划`、`YYC3-AI-LANDING-需求规划`
+- **新用户** → `YYC3-AI-LANDING-用户手册`
 
 **按功能导航**
-- **API开发** → `YYC3-AI-Landing-Page-API文档`
-- **前端开发** → `YYC3-AI-Landing-Page-详细设计`
-- **后端开发** → `YYC3-AI-Landing-Page-详细设计`、`YYC3-AI-Landing-Page-架构设计`
-- **数据库设计** → `YYC3-AI-Landing-Page-架构设计`、`YYC3-AI-Landing-Page-类型定义`
-- **系统部署** → `YYC3-AI-Landing-Page-部署发布`
+- **API开发** → `YYC3-AI-LANDING-API文档`
+- **前端开发** → `YYC3-AI-LANDING-详细设计`、`YYC3-AI-LANDING-类型定义`
+- **架构设计** → `YYC3-AI-LANDING-架构设计`
+- **测试工作** → `YYC3-AI-LANDING-测试文档`
+- **部署运维** → `YYC3-AI-LANDING-部署运维`
+- **项目管理** → `YYC3-AI-LANDING-项目规划`、`YYC3-AI-LANDING-需求规划`
 
 #### 5.2 搜索指南
 
@@ -374,12 +359,16 @@ YYC3-AI-Landing-Page项目是一个基于「五高五标五化」理念的现代
 #### 7.1 维护责任
 
 **文档维护责任人**
-- 架构设计文档：架构师
-- API文档：后端开发人员
-- 详细设计文档：开发团队
-- 测试文档：测试团队
-- 产品文档：产品团队
-- 运维文档：运维团队
+- 需求规划文档：产品经理、业务分析师
+- 项目规划文档：项目经理
+- 架构设计文档：架构师、技术负责人
+- 详细设计文档：开发团队、技术负责人
+- API文档：后端开发人员、API负责人
+- 类型定义文档：前端开发人员、后端开发人员
+- 测试文档：测试团队、QA负责人
+- 用户手册：技术文档工程师、产品经理
+- 部署运维文档：运维工程师、DevOps工程师
+- 脚本工具：DevOps工程师、技术负责人
 
 **维护流程**
 1. 文档需求识别
@@ -387,6 +376,7 @@ YYC3-AI-Landing-Page项目是一个基于「五高五标五化」理念的现代
 3. 文档审查
 4. 文档发布
 5. 文档版本控制
+6. 文档同步验证
 
 #### 7.2 更新频率
 
