@@ -1,7 +1,16 @@
 {
-  "name": "my-v0-project",
+  "name": "yyc3-ai-landing-page",
   "version": "0.1.0",
   "private": true,
+  "author": "YYC³ <admin@0379.email>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/YYC-Cube/yyc3-ai-landing-page.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",

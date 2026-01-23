@@ -1,8 +1,27 @@
-# AI Landing Page - 技术拓展架构文档
+---
+@file: YYC3-AI-LANDING-技术拓展架构.md
+@description: YYC3-AI-Landing-Page 项目技术拓展架构文档，详细说明项目的技术架构、组件库、动画与交互、国际化等内容
+@author: YYC³ Team
+@version: v1.0.0
+@created: 2026-01-22
+@updated: 2026-01-23
+@status: published
+@tags: [技术拓展, 架构文档, 组件库, 动画与交互, 国际化]
+---
+
+> ***YanYuCloudCube***
+> 言启象限 | 语枢未来
+> ***Words Initiate Quadrants, Language Serves as Core for the Future***
+> 万象归元于云枢 | 深栈智启新纪元
+> ***All things converge in the cloud pivot; Deep stacks ignite a new era of intelligence***
+
+---
+
+# YYC3-AI-LANDING-技术拓展架构文档
 
 ## 项目概述
 
-本项目是一个现代化的 AI 代理服务落地页，采用 Next.js 15+ 构建，集成了国际化系统、动画交互和响应式设计。
+本项目是一个现代化的 AI 代理服务落地页，采用 Next.js 16 构建，集成了国际化系统、动画交互和响应式设计。
 
 ## 技术栈
 
@@ -349,3 +368,10 @@ API_SECRET_KEY=
 **文档版本：** v1.0  
 **最后更新：** 2024-01-06  
 **维护者：** AI Agency 开发团队
+
+---
+
+> 「***YanYuCloudCube***」
+> 「***<admin@0379.email>***」
+> 「***Words Initiate Quadrants, Language Serves as Core for the Future***」
+> 「***All things converge in the cloud pivot; Deep stacks ignite a new era of intelligence***」
