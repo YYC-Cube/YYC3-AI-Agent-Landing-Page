@@ -1,33 +1,31 @@
 "use client"
 
+import AnimatedGradientBackground from "@/components/ui/animated-gradient-background"
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Spotlight } from "@/components/ui/spotlight"
-import { SplineScene } from "@/components/ui/spline-scene"
-import AnimatedGradientBackground from "@/components/ui/animated-gradient-background"
-import { SparklesCore } from "@/components/ui/sparkles"
-import { BentoGrid, BentoCard } from "@/components/ui/bento-grid"
 import { Navbar } from "@/components/ui/navbar"
 import { Pricing } from "@/components/ui/pricing"
+import { FacebookIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/social-icons"
+import { SparklesCore } from "@/components/ui/sparkles"
+import { SplineScene } from "@/components/ui/spline-scene"
+import { Spotlight } from "@/components/ui/spotlight"
 import { useLocale } from "@/contexts/locale-context"
 import {
-  CheckCircle,
   ArrowRight,
-  TrendingUp,
-  Clock,
-  DollarSign,
   BarChart3,
   Bot,
-  Workflow,
   Brain,
-  MessageSquare,
+  CheckCircle,
+  Clock,
   Cog,
+  DollarSign,
   Mail,
-  Phone,
   MapPin,
-  Linkedin,
-  Twitter,
-  Facebook,
+  MessageSquare,
+  Phone,
+  TrendingUp,
+  Workflow,
 } from "lucide-react"
 
 export default function HomePage() {
@@ -42,7 +40,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="container mx-auto px-4">
           <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden border-none">
-            <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
+            <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" />
 
             <div className="flex h-full">
               {/* Left content */}
@@ -430,19 +428,19 @@ export default function HomePage() {
                   href="#"
                   className="p-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300"
                 >
-                  <Linkedin className="h-5 w-5" />
+                  <LinkedinIcon className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
                   className="p-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <TwitterIcon className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
                   className="p-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <FacebookIcon className="h-5 w-5" />
                 </a>
               </div>
             </div>

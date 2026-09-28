@@ -3,14 +3,14 @@
 import { buttonVariants } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
+import { useLocale } from "@/contexts/locale-context"
 import { useMediaQuery } from "@/hooks/use-media-query"
 import { cn } from "@/lib/utils"
+import confetti from "canvas-confetti"
 import { motion } from "framer-motion"
 import { Check, Star } from "lucide-react"
 import Link from "next/link"
-import { useState, useRef } from "react"
-import confetti from "canvas-confetti"
-import { useLocale } from "@/contexts/locale-context"
+import { useRef, useState } from "react"
 
 interface PricingPlan {
   name: string
@@ -33,7 +33,6 @@ interface PricingProps {
 export function Pricing({
   plans,
   title = "Simple, Transparent Pricing",
-  description = "Choose the plan that works for you\nAll plans include access to our platform, lead generation tools, and dedicated support.",
 }: PricingProps) {
   const { t } = useLocale()
   const [isMonthly, setIsMonthly] = useState(true)
@@ -73,7 +72,7 @@ export function Pricing({
       <div className="flex justify-center mb-10">
         <label className="relative inline-flex items-center cursor-pointer">
           <Label>
-            <Switch ref={switchRef as any} checked={!isMonthly} onCheckedChange={handleToggle} className="relative" />
+            <Switch ref={switchRef} checked={!isMonthly} onCheckedChange={handleToggle} className="relative" />
           </Label>
         </label>
         <span className="ml-2 font-semibold text-white">
@@ -90,11 +89,11 @@ export function Pricing({
             whileInView={
               isDesktop
                 ? {
-                    y: plan.isPopular ? -20 : 0,
-                    opacity: 1,
-                    x: index === 2 ? -30 : index === 0 ? 30 : 0,
-                    scale: index === 0 || index === 2 ? 0.94 : 1.0,
-                  }
+                  y: plan.isPopular ? -20 : 0,
+                  opacity: 1,
+                  x: index === 2 ? -30 : index === 0 ? 30 : 0,
+                  scale: index === 0 || index === 2 ? 0.94 : 1.0,
+                }
                 : {}
             }
             viewport={{ once: true }}

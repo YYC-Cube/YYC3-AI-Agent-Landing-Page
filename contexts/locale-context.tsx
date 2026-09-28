@@ -27,10 +27,12 @@ export function LocaleProvider({ children, initialLocale = defaultLocale }: Loca
 
   // 从 localStorage 读取保存的语言设置
   useEffect(() => {
-    const savedLocale = localStorage.getItem("locale") as Locale
+    const savedLocale = localStorage.getItem("locale") as Locale | null
     if (savedLocale && locales.includes(savedLocale)) {
+      /* eslint-disable react-hooks/set-state-in-effect -- localStorage 水合恢复须在挂载后同步执行，SSR 无法预知 */
       setLocaleState(savedLocale)
       setT(getTranslations(savedLocale))
+      /* eslint-enable react-hooks/set-state-in-effect */
     }
   }, [])
 

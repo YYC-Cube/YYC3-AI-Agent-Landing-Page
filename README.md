@@ -1,6 +1,6 @@
 # 🔖 YYC³ AI Agent Landing Page
 
-![YYC³ AI Agent Landing Page](public/yyc3-article-cover-03.png)
+![YYC³ AI Agent Landing Page](public/yyc3-family.png)
 
 > ***YanYuCloudCube***
 
@@ -14,26 +14,63 @@
 
 ---
 
-![Next.js](https://img.shields.io/badge/Next.js-14.2.25-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.9-38B2AC?style=for-the-badge&logo=tailwind-css)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+## 🛡️ 徽章体系
+
+### 状态徽章
+
+| 徽章 | 说明 |
+| ---- | ---- |
+| [![CI](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/actions/workflows/ci.yml/badge.svg)](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/actions/workflows/ci.yml) | 持续集成：Lint + Typecheck + Build 质量门禁 |
+| [![Deploy Pages](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/actions/workflows/deploy-pages.yml) | GitHub Pages 自动部署 |
+| [![Website](https://img.shields.io/website?url=https%3A%2F%2Fai-landing.yyc3.top&label=%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83)](https://ai-landing.yyc3.top) | 生产环境在线状态 |
+| ![License](https://img.shields.io/badge/License-MIT-green?style=flat) | MIT 开源许可证 |
+
+### 技术栈徽章
+
+![Next.js](https://img.shields.io/badge/Next.js-16.3-000000?style=flat&logo=next.js)
+![React](https://img.shields.io/badge/React-19.3-61DAFB?style=flat&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.3-38B2AC?style=flat&logo=tailwind-css)
+![Radix UI](https://img.shields.io/badge/Radix_UI-latest-161618?style=flat&logo=radix-ui)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-new--york-000000?style=flat&logo=shadcnui)
+
+### 工程规范徽章
+
+![pnpm](https://img.shields.io/badge/pnpm-%E2%89%A510-F69220?style=flat&logo=pnpm)
+![Node.js](https://img.shields.io/badge/Node-%E2%89%A520.9-339933?style=flat&logo=nodedotjs)
+![Conventional Commits](https://img.shields.io/badge/Conventional_Commits-1.0.0-FE5196?style=flat&logo=conventionalcommits)
+![Code Style: ESLint](https://img.shields.io/badge/Code_Style-ESLint_flat-4B32C3?style=flat&logo=eslint)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+---
+
+## 🏷️ 标签 / 关键词
+
+**GitHub Topics**（推荐配置到仓库 About → Topics）：
+
+```text
+nextjs  react  typescript  tailwindcss  shadcn-ui  radix-ui  framer-motion
+spline  tsparticles  landing-page  ai-agent  github-pages  pnpm  i18n
+static-site  app-router  dark-theme  responsive  ci-cd  yyc3
+```
+
+**语义关键词**：AI 代理落地页 · 国际化 · 3D 场景 · 粒子动效 · 静态导出 · 自动化部署 · 五高五标五化
 
 ---
 
 ## 📋 项目概述
 
-**YYC³(YanYuCloudCube) AI Agent Landing Page** 是一个现代化的 AI 代理服务落地页，采用 Next.js 16 构建，集成了国际化系统、3D 场景交互、动画效果和响应式设计。本项目旨在为 AI 代理服务提供专业、美观、高性能的展示平台，支持多语言切换，提供流畅的用户体验。
+**YYC³(YanYuCloudCube) AI Agent Landing Page** 是一个现代化的 AI 代理服务落地页，采用 **Next.js 16 (App Router)** 构建，集成了国际化系统、Spline 3D 场景交互、粒子动画和响应式设计。生产环境通过 **GitHub Pages** 自动部署：**[https://ai-landing.yyc3.top](https://ai-landing.yyc3.top)**
 
 ### 核心特性
 
-- 🌍 **国际化支持** - 内置中英文双语系统，支持实时语言切换
-- 🎨 **现代化 UI** - 基于 shadcn/ui 组件库，提供精美的视觉体验
-- 🎬 **丰富动效** - 集成 Framer Motion、Spline 3D 场景、粒子动画等
+- 🌍 **国际化支持** - 基于 React Context 的中英双语系统，localStorage 持久化
+- 🎨 **现代化 UI** - 基于 shadcn/ui (new-york) + Radix UI 原语
+- 🎬 **丰富动效** - Framer Motion、Spline 3D 场景、tsparticles 粒子动画、confetti 庆祝
 - 📱 **响应式设计** - 完美适配桌面、平板、移动设备
-- ⚡ **高性能** - 优化的加载速度和交互响应
-- 🔒 **类型安全** - 完整的 TypeScript 类型定义
+- ⚡ **静态导出** - `output: 'export'` 全静态化，Pages/CDN 友好
+- 🔒 **类型安全** - TypeScript strict + noUncheckedIndexedAccess
+- 🤖 **CI 自动化** - push 即 lint + typecheck + build + 部署全链路闭环
 
 ---
 
@@ -41,145 +78,74 @@
 
 ### 环境要求
 
-- Node.js >= 18.0.0
-- pnpm >= 8.0.0（推荐）或 npm >= 9.0.0
+- Node.js >= 20.9.0
+- pnpm >= 10.0.0（通过 `packageManager` 字段自动锁定）
 
 ### 安装依赖
 
 ```bash
-# 使用 pnpm（推荐）
 pnpm install
-
-# 或使用 npm
-npm install
 ```
 
 ### 启动开发服务器
 
 ```bash
-# 使用 pnpm
 pnpm dev
-
-# 或使用 npm
-npm run dev
+# 访问 http://localhost:3030
 ```
 
-访问 [http://localhost:3000](http://localhost:3000) 查看应用。
-
-### 构建生产版本
+### 质量门禁（本地验证）
 
 ```bash
-# 使用 pnpm
-pnpm build
-
-# 或使用 npm
-npm run build
+pnpm lint        # ESLint (flat config, next/core-web-vitals + typescript)
+pnpm typecheck   # tsc --noEmit
+pnpm build       # 生产构建 + 静态导出至 out/
 ```
 
-### 启动生产服务器
+### 预览生产构建
 
 ```bash
-# 使用 pnpm
-pnpm start
-
-# 或使用 npm
-npm start
+pnpm build && pnpm preview   # 静态预览 out/ 目录
 ```
 
 ---
 
-## 📚 技术栈
+## 📚 技术栈（与 package.json 对齐）
 
 ### 核心框架
 
 | 技术 | 版本 | 用途 |
-|------|------|------|
-| Next.js | 16 | React 框架，支持 App Router |
-| React | 19.2.0 | UI 库 |
-| TypeScript | 5.1.6 | 类型安全 |
-| Tailwind CSS | 4.1.9 | 原子化 CSS 框架 |
+| ------ | ------ | ------ |
+| Next.js | ^16.3.6 | React 框架，App Router + 静态导出 |
+| React / React DOM | ^19.3.0 | UI 库 |
+| TypeScript | ^5.9.3 | 类型安全（strict 模式） |
+| Tailwind CSS | ^4.3.3 | 原子化 CSS（v4 CSS-first，无 tailwind.config） |
 
 ### UI 组件库
 
 | 技术 | 版本 | 用途 |
-|------|------|------|
-| shadcn/ui | latest | 可复用组件系统 |
-| Radix UI | latest | 无障碍 UI 原语 |
-| Lucide Icons | 0.454.0 | 图标库 |
+| ------ | ------ | ------ |
+| shadcn/ui | new-york style | 可复用组件系统（components.json） |
+| Radix UI | ^2.x（按需 5 个原语） | dropdown-menu / label / switch / slot / icons |
+| Lucide Icons | ^1.48.0 | 图标库（品牌图标已内联 SVG 化） |
 
 ### 动画与交互
 
 | 技术 | 版本 | 用途 |
-|------|------|------|
-| Framer Motion | 12.23.12 | 动画库 |
-| @splinetool/react-spline | 4.1.0 | 3D 场景渲染 |
-| @tsparticles/react | 3.0.0 | 粒子动画 |
-| canvas-confetti | 1.9.3 | 庆祝动画 |
+| ------ | ------ | ------ |
+| Framer Motion | ^13.4.4 | 动画编排（Spotlight/渐变背景/定价卡） |
+| @splinetool/react-spline | ^4.1.0 | Spline 3D 场景（lazy 加载） |
+| @tsparticles/react | ^3.0.0 | 粒子动画（slim 引擎） |
+| canvas-confetti | ^1.9.4 | 定价切换庆祝动效 |
 
-### 其他依赖
+### 工程化
 
-- **@vercel/analytics** - Vercel 分析
-- **react-hook-form** - 表单管理
-- **zod** - 数据验证
-- **date-fns** - 日期处理
-- **recharts** - 图表库
-
----
-
-## 🎯 功能特性
-
-### 1. 国际化系统 (i18n)
-
-基于 React Context API 的轻量级国际化解决方案，支持：
-
-- 客户端语言切换
-- 状态持久化到 localStorage
-- 类型安全的翻译字典
-- 支持中文（默认）和英文
-
-**使用示例：**
-
-```tsx
-import { useLocale } from '@/contexts/locale-context'
-
-function Component() {
-  const { t, locale, setLocale } = useLocale()
-  return <h1>{t.hero.title}</h1>
-}
-```
-
-### 2. 响应式布局
-
-采用移动优先设计策略，支持以下断点：
-
-- `sm`: 640px
-- `md`: 768px
-- `lg`: 1024px
-- `xl`: 1280px
-
-### 3. 动画与交互
-
-- **Spotlight 聚光灯效果** - 鼠标跟随的光晕效果
-- **Sparkles 粒子动画** - 动态粒子背景
-- **Spline 3D 场景** - 交互式 3D 元素
-- **渐变背景动画** - 流畅的背景渐变
-- **卡片悬浮交互** - 优雅的悬停效果
-
-### 4. 核心页面
-
-- **首页** - 产品展示和介绍
-- **隐私政策** - 隐私政策说明
-- **服务条款** - 服务条款说明
-
-### 5. 组件系统
-
-- **Navbar** - 响应式导航栏
-- **Pricing** - 定价卡片展示
-- **BentoGrid** - 服务展示网格
-- **LanguageSwitcher** - 语言切换器
-- **Spotlight** - 聚光灯效果
-- **Sparkles** - 粒子动画
-- **SplineScene** - 3D 场景
+| 技术 | 版本 | 用途 |
+| ------ | ------ | ------ |
+| ESLint | ^9.39.5 + eslint-config-next ^16.3.6 | Flat config 代码规范 |
+| @vercel/analytics | ^2.0.1 | 访问分析 |
+| geist | ^1.7.2 | 字体系统 |
+| tw-animate-css | ^1.4.0 | Tailwind v4 动画工具类 |
 
 ---
 
@@ -187,73 +153,46 @@ function Component() {
 
 ```
 yyc3-ai-agent-landing-page/
-├── app/                      # Next.js App Router
-│   ├── layout.tsx            # 根布局
+├── app/                      # Next.js App Router（静态导出）
+│   ├── layout.tsx            # 根布局（metadataBase: ai-landing.yyc3.top）
 │   ├── page.tsx              # 首页
-│   ├── globals.css           # 全局样式
-│   ├── privacy/              # 隐私政策页
-│   └── terms/                # 服务条款页
+│   ├── globals.css           # 全局样式（Tailwind v4 CSS-first）
+│   ├── privacy/page.tsx      # 隐私政策页
+│   └── terms/page.tsx        # 服务条款页
 ├── components/
-│   ├── ui/                   # UI 组件
-│   │   ├── navbar.tsx        # 导航栏
-│   │   ├── pricing.tsx       # 定价组件
-│   │   ├── bento-grid.tsx    # Bento 网格布局
-│   │   ├── spotlight.tsx     # 聚光灯效果
-│   │   ├── sparkles.tsx      # 粒子效果
-│   │   ├── spline-scene.tsx  # 3D 场景
-│   │   ├── language-switcher.tsx  # 语言切换器
-│   │   └── ...               # 其他 shadcn 组件
-│   └── theme-provider.tsx    # 主题提供者
+│   └── ui/                   # UI 组件（navbar/pricing/bento-grid/spotlight/sparkles/
+│                             #   spline-scene/animated-gradient-background/
+│                             #   language-switcher/social-icons + shadcn 基础组件）
 ├── contexts/
 │   └── locale-context.tsx    # 语言上下文
+├── hooks/
+│   └── use-media-query.ts    # 媒体查询 Hook (useSyncExternalStore)
 ├── lib/
-│   ├── i18n.ts               # 国际化配置
-│   └── utils.ts              # 工具函数
-├── hooks/                    # 自定义 Hooks
-│   └── use-media-query.ts    # 媒体查询 Hook
+│   ├── i18n.ts               # 国际化字典与配置
+│   └── utils.ts              # cn() 工具函数
 ├── public/                   # 静态资源
-│   ├── assets/               # 资源文件
-│   └── yyc3-article-cover-03.png  # 封面图
-├── docs/                     # 文档
-│   ├── ARCHITECTURE.md       # 架构文档
-│   ├── FEATURE_MATRIX.md     # 功能矩阵
-│   └── ENTERPRISE_ROADMAP.md # 企业路线图
-├── styles/                   # 样式文件
-│   └── globals.css           # 全局样式
-├── package.json              # 项目配置
-├── tsconfig.json             # TypeScript 配置
-├── next.config.mjs           # Next.js 配置
-└── tailwind.config.ts        # Tailwind CSS 配置
+│   ├── CNAME                 # GitHub Pages 自定义域名
+│   ├── favicon-*.png         # 站点图标
+│   └── yyc3/                 # 全平台应用图标（iOS/Android/macOS/watchOS/Web）
+├── docs/                     # YYC³ 标准化文档体系（001-108）
+├── .github/workflows/
+│   ├── ci.yml                # CI 质量门禁
+│   └── deploy-pages.yml      # Pages 自动部署
+├── next.config.mjs           # output: 'export' + images.unoptimized
+├── eslint.config.mjs         # ESLint flat config
+└── pnpm-workspace.yaml       # pnpm 11 设置（allowBuilds）
 ```
 
 ---
 
 ## 🎨 样式与主题
 
-项目使用 Tailwind CSS 进行样式管理，支持：
+项目使用 **Tailwind CSS v4**（CSS-first 配置，**无 tailwind.config 文件**），主题通过 [app/globals.css](app/globals.css) 中的 CSS 变量定义：
 
-- 深色主题（默认）
-- 自定义颜色系统
-- 响应式工具类
-- 动画和过渡效果
-
-### 自定义主题配置
-
-```typescript
-// tailwind.config.ts
-export default {
-  theme: {
-    extend: {
-      colors: {
-        // 自定义颜色
-      },
-      animation: {
-        // 自定义动画
-      },
-    },
-  },
-}
-```
+- 深色主题（默认）+ oklch 颜色系统
+- `@custom-variant dark` 类切换策略
+- tw-animate-css 提供动画工具类
+- 响应式断点：`sm: 640px` / `md: 768px` / `lg: 1024px` / `xl: 1280px`
 
 ---
 
@@ -261,178 +200,114 @@ export default {
 
 ### 环境变量
 
-创建 `.env.local` 文件：
+创建 `.env.local` 文件（已加入 .gitignore）：
 
 ```env
-# 分析
+# Vercel Analytics（可选）
 NEXT_PUBLIC_GA_ID=
-VERCEL_ANALYTICS_ID=
-
-# API（未来）
-NEXT_PUBLIC_API_URL=
-API_SECRET_KEY=
 ```
 
 ### TypeScript 配置
 
-项目使用 TypeScript 严格模式，确保类型安全：
+项目使用 TypeScript 严格模式：`strict` + `noUncheckedIndexedAccess` + `noUnusedLocals` + `noFallthroughCasesInSwitch`，详见 [tsconfig.json](tsconfig.json)。
 
-```json
-{
-  "compilerOptions": {
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    // 其他配置...
-  }
-}
-```
+### 关键构建配置
 
----
-
-## 📖 开发指南
-
-### 代码风格
-
-- 使用 TypeScript 严格模式
-- 遵循 ESLint 规则
-- 组件使用函数式写法
-- 优先使用 Tailwind CSS
-
-### 命名规范
-
-- 组件：PascalCase（如：`UserProfile.tsx`）
-- 文件：kebab-case（如：`user-service.ts`）
-- 函数：camelCase（如：`getUserData`）
-- 常量：UPPER_SNAKE_CASE（如：`API_BASE_URL`）
-
-### Git 工作流
-
-- 主分支：`main`
-- 功能分支：`feature/功能名`
-- 修复分支：`fix/问题描述`
-- Commit 信息：使用 Conventional Commits 规范
-
-**Commit 示例：**
-
-```bash
-feat(i18n): 添加日语语言支持
-
-- 更新 i18n 配置文件
-- 添加日语翻译字典
-- 更新语言切换器组件
-
-Closes #123
-```
-
----
-
-## 🧪 测试
-
-项目支持以下测试框架：
-
-- **Jest** - 单元测试
-- **React Testing Library** - 组件测试
-- **Playwright** - E2E 测试
-
-### 运行测试
-
-```bash
-# 运行所有测试
-pnpm test
-
-# 运行测试并监听变化
-pnpm test:watch
-
-# 运行 E2E 测试
-pnpm test:e2e
-```
+| 配置 | 值 | 原因 |
+| ---- | ---- | ---- |
+| `output` | `'export'` | GitHub Pages 静态托管 |
+| `images.unoptimized` | `true` | 静态导出不支持图片优化服务 |
+| `trailingSlash` | `true` | Pages 目录索引路由兼容 |
+| 开发端口 | `3030` | YYC³ 团队开发服务器端口规范 |
 
 ---
 
 ## 🚢 部署
 
-### Vercel 部署（推荐）
+### GitHub Pages 自动部署（当前方案）
 
-1. 将代码推送到 GitHub
-2. 在 Vercel 中导入项目
-3. 配置环境变量
-4. 部署完成
+**生产地址**：[https://ai-landing.yyc3.top](https://ai-landing.yyc3.top)
 
-### 其他平台
+- 推送 `main` 分支自动触发 [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)
+- 流水线：install → lint → typecheck → build（静态导出）→ deploy-pages
+- 自定义域名：`public/CNAME` → `ai-landing.yyc3.top`
+- 首次启用（一次性）：仓库 **Settings → Pages → Source 选择「GitHub Actions」**，并确保域名 DNS CNAME 记录指向 `<org>.github.io`
 
-项目支持部署到以下平台：
+### CI 质量门禁
 
-- **Vercel** - 推荐
-- **Netlify**
-- **AWS Amplify**
-- **Docker**
+[.github/workflows/ci.yml](.github/workflows/ci.yml) 在 push/PR 时执行：
 
-### Docker 部署
-
-```bash
-# 构建镜像
-docker build -t yyc3-ai-agent-landing-page .
-
-# 运行容器
-docker run -p 3000:3000 yyc3-ai-agent-landing-page
-```
+1. `pnpm install --frozen-lockfile`
+2. `pnpm lint`（ESLint 0 error 门禁）
+3. `pnpm typecheck`（tsc 0 error 门禁）
+4. `pnpm build`（构建成功门禁）
+5. 产物上传（保留 7 天）
 
 ---
 
-## 📊 性能优化
+## 🧪 测试
 
-### 已实现的优化
+测试体系处于规划阶段（详见 [docs/YYC3-AI-LANDING-测试文档](docs/YYC3-AI-LANDING-测试文档/)）：
 
-- 代码分割和懒加载
-- 图片优化（Next.js Image 组件）
-- 字体优化
-- CSS 优化
-- 缓存策略
-
-### 性能指标
-
-- **LCP** (最大内容绘制) < 2.5s
-- **FID** (首次输入延迟) < 100ms
-- **CLS** (累积布局偏移) < 0.1
+- **单元测试** - Vitest（规划中）
+- **组件测试** - React Testing Library（规划中）
+- **E2E 测试** - Playwright（规划中）
 
 ---
 
 ## 🔒 安全
 
-- 无硬编码密钥或凭据
-- 输入验证和清理
-- 安全头配置
-- CORS 配置
-- 依赖安全扫描
+- 无硬编码密钥或凭据，环境变量管理敏感信息
+- `.env*` 全部加入 .gitignore
+- CI 中使用 `--frozen-lockfile` + pnpm 11 `allowBuilds` 构建脚本白名单（供应链防护）
+- 依赖安全由 Dependabot 自动更新（见历史 PR）
+- 安全漏洞反馈：见 [SECURITY.md](SECURITY.md)
 
 ---
 
-## 📝 文档
+## 📝 文档体系
 
-- [架构文档](docs/ARCHITECTURE.md) - 详细的技术架构说明
-- [功能矩阵](docs/FEATURE_MATRIX.md) - 功能对比和路线图
-- [企业路线图](docs/ENTERPRISE_ROADMAP.md) - 企业级功能规划
+YYC³ 标准化文档体系（编号详见 [文档映射目录](docs/YYC3-AI-LANDING-文档映射目录.md)）：
+
+| 分类 | 编号 | 说明 |
+| ---- | ---- | ---- |
+| [需求规划](docs/YYC3-AI-LANDING-需求规划/) | 001-007 | 章程/可行性/需求说明书 |
+| [项目规划](docs/YYC3-AI-LANDING-项目规划/) | 011-016 | 进度/资源/风险/沟通 |
+| [架构设计](docs/YYC3-AI-LANDING-架构设计/) | 021-031 | 系统/数据/安全/部署架构 |
+| [详细设计](docs/YYC3-AI-LANDING-详细设计/) | 036-054 | 模块/UI-UX/i18n/SEO |
+| [API 文档](docs/YYC3-AI-LANDING-API文档/) | 056-073 | RESTful 规范/业务域接口 |
+| [类型定义](docs/YYC3-AI-LANDING-类型定义/) | 074-080 | TS 全局类型/组件 Props |
+| [测试文档](docs/YYC3-AI-LANDING-测试文档/) | 081-089 | 单元/集成/E2E/性能规范 |
+| [部署运维](docs/YYC3-AI-LANDING-部署运维/) | 090-099 | 部署方案/CI/CD/监控 |
+| [用户手册](docs/YYC3-AI-LANDING-用户手册/) | 100-105 | 快速开始/FAQ/故障排除 |
+| [开发者规范](docs/YYC3-AI-LANDING-开发者规范/) | 106-108 | 工具链/代码规范/CI-CD 标规 |
+
+### 社区文档
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) - 贡献指南
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - 行为准则
+- [SECURITY.md](SECURITY.md) - 安全策略
+- [CHANGELOG.md](CHANGELOG.md) - 变更日志
 
 ---
 
 ## 🤝 贡献指南
 
-我们欢迎所有形式的贡献！
+我们欢迎所有形式的贡献！请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-### 如何贡献
+```bash
+# 1. Fork 后创建功能分支
+git checkout -b feature/AmazingFeature
 
-1. Fork 本仓库
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'feat: Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
+# 2. 开发并通过本地质量门禁
+pnpm lint && pnpm typecheck && pnpm build
 
-### 贡献规范
+# 3. 遵循 Conventional Commits 提交
+git commit -m "feat(i18n): 添加日语语言支持"
 
-- 遵循项目的代码风格
-- 添加必要的测试
-- 更新相关文档
-- 确保所有测试通过
+# 4. 推送并开启 Pull Request
+git push origin feature/AmazingFeature
+```
 
 ---
 
@@ -446,7 +321,6 @@ docker run -p 3000:3000 yyc3-ai-agent-landing-page
 
 - **技术支持**：<admin@0379.email>
 - **问题反馈**：[GitHub Issues](https://github.com/YYC-Cube/YYC3-AI-Agent-Landing-Page/issues)
-- **文档更新**：<admin@0379.email>
 
 ---
 
@@ -460,20 +334,14 @@ docker run -p 3000:3000 yyc3-ai-agent-landing-page
 
 ---
 
-## 🌟 致谢
-
-感谢所有为这个项目做出贡献的开发者和设计师！
-
----
-
 ## 📌 备注
 
-1. **文档更新**：本文档将定期更新以适应项目的发展，请关注最新版本。
+1. **文档更新**：本文档与技术实况严格对齐（最近校准：2026-09-28），请关注最新版本。
 
 2. **使用建议**：
    - 建议在项目初始化阶段就开始使用本指南
    - 定期进行代码审查，确保代码质量
-   - 结合自动化工具使用，提高开发效率
+   - 结合 CI 自动化工具使用，提高开发效率
 
 3. **适用范围**：
    - 适用于 YYC³ 团队所有 AI 相关项目

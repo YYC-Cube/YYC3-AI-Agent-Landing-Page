@@ -1,0 +1,6 @@
+packages: []
+
+# pnpm 11+ 依赖构建脚本策略（allowBuilds 取代 v10 的 onlyBuiltDependencies）
+allowBuilds:
+  "@tsparticles/engine": true
+  unrs-resolver: true

@@ -7,13 +7,27 @@ import { LocaleProvider } from "@/contexts/locale-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "YYC³ AI Agent Landing Page",
+  metadataBase: new URL("https://ai-landing.yyc3.top"),
+  title: {
+    default: "YYC³ AI Agent Landing Page",
+    template: "%s | YYC³ AI Agent Landing Page",
+  },
   description: "YYC³ AI Agent Landing Page - 专业的AI代理服务展示平台",
   generator: "YYC³",
+  keywords: ["YYC³", "AI Agent", "AI 代理", "Landing Page", "智能体"],
   icons: {
-    icon: "/yyc3-pwa-icon.png",
-    shortcut: "/yyc3-pwa-icon.png",
-    apple: "/yyc3-pwa-icon.png",
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: "/favicon-32.png",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "YYC³ AI Agent Landing Page",
+    url: "https://ai-landing.yyc3.top",
+    images: [{ url: "/og-image.png", width: 512, height: 512 }],
   },
 }
 

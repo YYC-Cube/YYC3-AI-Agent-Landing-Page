@@ -1,8 +1,9 @@
-import type { ReactNode } from "react"
 import { ArrowRightIcon } from "@radix-ui/react-icons"
+import type { LucideIcon } from "lucide-react"
+import type { ReactNode } from "react"
 
-import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 const BentoGrid = ({
   children,
@@ -26,7 +27,7 @@ const BentoCard = ({
   name: string
   className: string
   background: ReactNode
-  Icon: any
+  Icon: LucideIcon
   description: string
   href: string
   cta: string

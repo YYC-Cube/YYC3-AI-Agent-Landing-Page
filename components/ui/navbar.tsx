@@ -1,9 +1,10 @@
 "use client"
 
-import type React from "react"
-import { useState, useEffect, useRef } from "react"
-import { useLocale } from "@/contexts/locale-context"
 import { LanguageSwitcher } from "@/components/ui/language-switcher"
+import { useLocale } from "@/contexts/locale-context"
+import Image from "next/image"
+import type React from "react"
+import { useEffect, useRef, useState } from "react"
 
 const AnimatedNavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   const defaultTextColor = "text-gray-300"
@@ -27,34 +28,36 @@ export function Navbar() {
   const shapeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
-
-  useEffect(() => {
+    const next = !isOpen
+    setIsOpen(next)
     if (shapeTimeoutRef.current) {
       clearTimeout(shapeTimeoutRef.current)
     }
-
-    if (isOpen) {
+    if (next) {
       setHeaderShapeClass("rounded-xl")
     } else {
       shapeTimeoutRef.current = setTimeout(() => {
         setHeaderShapeClass("rounded-full")
       }, 300)
     }
+  }
 
+  // 卸载时清理延迟计时器
+  useEffect(() => {
     return () => {
       if (shapeTimeoutRef.current) {
         clearTimeout(shapeTimeoutRef.current)
       }
     }
-  }, [isOpen])
+  }, [])
 
   const logoElement = (
     <div className="relative w-6 h-6 flex items-center justify-center">
-      <img
-        src="/yyc3-logo-black-01.png"
+      <Image
+        src="/favicon-32.png"
         alt="YYC³ Logo"
+        width={24}
+        height={24}
         className="w-full h-full object-contain"
       />
     </div>
