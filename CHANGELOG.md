@@ -5,6 +5,16 @@
 
 ## [Unreleased]
 
+### Fixed 修复
+
+- **CI/CD 部署失败**：pnpm 11 默认 `minimumReleaseAge`（24h）策略拒绝了 lockfile 中 27 个新发布包（sharp 生态），导致 Deploy 失败、ai-landing.yyc3.top 404；现于 pnpm-workspace.yaml 显式声明 `minimumReleaseAge: 1440` 并重新解析 lockfile（sharp 0.35.5 → 0.35.4）
+- **Dependabot 全部 5 个开放漏洞清零**：通过 pnpm overrides 强制传递依赖修复下限——browserslist ^4.28.7（GHSA 内存增长/原型写入）、nanoid ^3.3.18（GHSA 零尺寸死循环）、baseline-browser-mapping ^2.11.0（DoS）、postcss ^8.5.23（sourceMappingURL 任意读取）
+- **文档版本漂移**：全量同步 130+ 处过时的 "Next.js 14" 引用至 Next.js 16 实况（docs/ 与 README）
+
+### Added 新增
+
+- 仓库 Topics 标签体系上线（20 个：nextjs / react / ai-agent / github-pages 等）
+
 ## [1.0.0] - 2026-09-28
 
 首个正式版本：技术栈全面升级至当前稳定线，建立 CI/CD 自动化部署与完整文档体系。
@@ -12,7 +22,7 @@
 ### Added 新增
 
 - **CI 质量门禁**（[ci.yml](.github/workflows/ci.yml)）：push main / PR 触发，`--frozen-lockfile` 安装 + lint + typecheck + 静态导出构建，产物留存 7 天
-- **GitHub Pages 自动化部署**（[deploy-pages.yml](.github/workflows/deploy-pages.yml)）：push main 自动发布至 **https://ai-landing.yyc3.top**，含 lint/typecheck 部署前置门禁
+- **GitHub Pages 自动化部署**（[deploy-pages.yml](.github/workflows/deploy-pages.yml)）：push main 自动发布至 **<https://ai-landing.yyc3.top**，含> lint/typecheck 部署前置门禁
 - **开发者标规系列**（docs/YYC3-AI-LANDING-开发者规范/）：
   - 106 开发环境与工具链（Node/pnpm 版本、依赖策略、allowBuilds 供应链防护）
   - 107 代码规范与 Git 工作流（TypeScript 门禁、命名、组件、分支模型）

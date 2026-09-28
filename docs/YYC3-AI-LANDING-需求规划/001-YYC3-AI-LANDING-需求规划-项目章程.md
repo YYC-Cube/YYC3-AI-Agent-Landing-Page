@@ -29,7 +29,7 @@
 
 #### 1.1 项目背景
 
-YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理念的现代化AI代理服务落地页，采用Next.js 14+构建，集成了国际化系统、3D场景交互、动画效果和响应式设计。
+YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理念的现代化AI代理服务落地页，采用Next.js 16构建，集成了国际化系统、3D场景交互、动画效果和响应式设计。
 
 #### 1.2 文档目标
 
@@ -78,7 +78,7 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 #### 3.3 项目使命
 
-- **技术使命**：采用最新的前端技术栈（Next.js 14+、React 19、TypeScript 5），构建高性能、可维护的现代化Web应用
+- **技术使命**：采用最新的前端技术栈（Next.js 16、React 19、TypeScript 5），构建高性能、可维护的现代化Web应用
 - **产品使命**：通过直观的界面设计和流畅的交互体验，清晰展示AI代理服务的核心价值和功能特性
 - **用户使命**：为潜在用户提供快速了解、体验和选择AI代理服务的便捷渠道
 
@@ -125,7 +125,7 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 **技术范围**：
 
-- 前端框架：Next.js 14.2.25 (App Router)
+- 前端框架：Next.js 16.3.6 (App Router)
 - UI框架：React 19 + TypeScript 5
 - 样式方案：Tailwind CSS 4.1.9
 - 组件库：shadcn/ui + Radix UI
@@ -203,7 +203,7 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 ##### 3.8.3 约束条件
 
-- **技术约束**：必须使用Next.js 14+、React 19、TypeScript 5
+- **技术约束**：必须使用Next.js 16、React 19、TypeScript 5
 - **资源约束**：开发团队规模有限，需要高效协作
 - **时间约束**：MVP版本需要在3个月内完成
 - **预算约束**：使用Vercel免费部署方案，控制成本

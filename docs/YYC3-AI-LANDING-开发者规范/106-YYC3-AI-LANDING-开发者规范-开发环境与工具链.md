@@ -42,17 +42,30 @@ pnpm install --frozen-lockfile  # CI/协作者必须（与 pnpm-lock.yaml 严格
 
 ### 2.2 供应链防护（pnpm 11）
 
-构建脚本白名单位于 [pnpm-workspace.yaml](../../pnpm-workspace.yaml)：
+策略配置位于 [pnpm-workspace.yaml](../../pnpm-workspace.yaml)：
 
 ```yaml
+# 1) 版本发布年龄门槛：拒绝发布未满 24h 的包（防新版本投毒）
+minimumReleaseAge: 1440
+
+# 2) 传递依赖安全覆盖（Dependabot GHSA 修复下限）
+overrides:
+  "browserslist@<4.28.7": "^4.28.7"
+  "nanoid@<3.3.18": "^3.3.18"
+  "baseline-browser-mapping@<2.11.0": "^2.11.0"
+  "postcss@<=8.5.22": "^8.5.23"
+
+# 3) 构建脚本白名单（allowBuilds 取代 v10 的 onlyBuiltDependencies）
 allowBuilds:
-  '@tsparticles/engine': true   # 允许执行安装脚本
+  "@tsparticles/engine": true
   unrs-resolver: true
 ```
 
-- 未列入白名单的依赖**不允许**执行 postinstall 脚本（默认拒绝）
-- 新增带构建脚本的依赖时，必须审查其脚本内容后手动加入 `allowBuilds`
+- **minimumReleaseAge**：CI 严格校验 lockfile 中每个包的发布时间，未满门槛将被拒绝（`ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION`）；本地生成 lockfile 必须使用与 CI 一致的 pnpm 11 版本
+- **overrides**：仅约束受漏洞影响的传递依赖版本下限，正则语义为「仅当命中漏洞区间时升级」
+- **allowBuilds**：未列入白名单的依赖**不允许**执行 postinstall 脚本（默认拒绝）；新增带构建脚本的依赖时，必须审查其脚本内容后手动加入
 - CI 使用 `--frozen-lockfile` 防止锁文件漂移
+- ⚠️ pnpm 11 **不再读取** package.json 的 `pnpm` 字段，以上设置一律写 pnpm-workspace.yaml
 
 ### 2.3 依赖升级流程
 

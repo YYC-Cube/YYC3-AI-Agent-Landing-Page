@@ -13,7 +13,7 @@
 
 ## 概述
 
-YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理念的现代化AI代理服务落地页，采用Next.js 14+构建，集成了国际化系统、3D场景交互、动画效果和响应式设计。
+YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理念的现代化AI代理服务落地页，采用Next.js 16构建，集成了国际化系统、3D场景交互、动画效果和响应式设计。
 
 ## 核心内容
 
@@ -21,7 +21,7 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 #### 1.1 项目背景
 
-YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理念的现代化AI代理服务落地页，采用Next.js 14+构建，集成了国际化系统、3D场景交互、动画效果和响应式设计。
+YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理念的现代化AI代理服务落地页，采用Next.js 16构建，集成了国际化系统、3D场景交互、动画效果和响应式设计。
 
 #### 1.2 文档目标
 
@@ -59,7 +59,7 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 #### 3.1 架构设计
 
-基于Next.js 14+ App Router架构，采用现代化前端技术栈：
+基于Next.js 16 App Router架构，采用现代化前端技术栈：
 
 - 表现层：React 19 + TypeScript + Tailwind CSS
 - 组件库：shadcn/ui + Radix UI
@@ -69,7 +69,7 @@ YYC³(YanYuCloudCube)-AI-LANDING项目是一个基于「五高五标五化」理
 
 #### 3.2 技术选型
 
-- 前端框架：Next.js 14.2.25 + React 19
+- 前端框架：Next.js 16.3.6 + React 19.3
 - 类型系统：TypeScript 5
 - 样式方案：Tailwind CSS 4.1.9
 - UI组件：shadcn/ui + Radix UI
